@@ -52,4 +52,7 @@ public class User {
     //mappedBy é aonde não tem a chave estrangeira
     @OneToMany(mappedBy = "user")
     private List<Produtos> produtos;
+
+    @OneToMany(mappedBy = "user")
+    private List<Vendas> vendas;
 }

@@ -23,6 +23,6 @@ public class UserRequestDto {
     private String password;
     private Boolean is_active;
     private String cpf_cnpj;
-    private List<ProdutosRequestDto> produtosRequestDtos;
+//    private List<ProdutosRequestDto> produtosRequestDtos;
 
 }

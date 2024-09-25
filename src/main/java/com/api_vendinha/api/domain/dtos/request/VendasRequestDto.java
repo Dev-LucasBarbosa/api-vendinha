@@ -5,8 +5,8 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class ProdutosRequestDto {
-    private String nome;
-    private Integer quantidade;
-    private Float preco;
+public class VendasRequestDto {
+    private Long user_id;
+    private Long product_id;
+    private Integer quantity;
 }

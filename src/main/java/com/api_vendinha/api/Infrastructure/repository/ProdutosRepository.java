@@ -7,20 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
-/**
- * Repositório para a entidade User.
- *
- * Esta interface estende JpaRepository, o que fornece uma série de métodos prontos para realizar
- * operações de persistência no banco de dados para a entidade User.
- */
 @Repository
 public interface ProdutosRepository extends JpaRepository<Produtos, Long> {
-
-    /**
-     * Busca um usuário pelo nome.
-     *
-     * @param nome Nome do usuário a ser pesquisado.
-     * @return Um Optional contendo o usuário encontrado, se existir; caso contrário, um Optional vazio.
-     */
 
 }

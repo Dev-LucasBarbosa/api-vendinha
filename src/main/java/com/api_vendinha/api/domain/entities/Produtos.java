@@ -33,4 +33,52 @@ public class Produtos {
 
     @OneToMany(mappedBy = "produtos")
     private List<Vendas> vendas;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Integer getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(Integer quantidade) {
+        this.quantidade = quantidade;
+    }
+
+    public Float getPreco() {
+        return preco;
+    }
+
+    public void setPreco(Float preco) {
+        this.preco = preco;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public List<Vendas> getVendas() {
+        return vendas;
+    }
+
+    public void setVendas(List<Vendas> vendas) {
+        this.vendas = vendas;
+    }
 }

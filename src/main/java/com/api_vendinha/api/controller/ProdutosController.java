@@ -18,11 +18,11 @@ public class ProdutosController {
         this.produtosService = produtosService;
     }
 
-    @PostMapping("/produtos") // Define que este método lida com requisições HTTP POST.
-    public ProdutosResponseDto salvar(@RequestBody ProdutosRequestDto produtosRequestDto) {
-        // Chama o serviço para salvar o usuário e retorna a resposta.
-        return produtosService.save(produtosRequestDto);
-    }
+//    @PostMapping("/produtos") // Define que este método lida com requisições HTTP POST.
+//    public ProdutosResponseDto salvar(@RequestBody ProdutosRequestDto produtosRequestDto) {
+//        // Chama o serviço para salvar o usuário e retorna a resposta.
+//        return produtosService.save(produtosRequestDto);
+//    }
 
     @PutMapping("/produtos/{id}") // Define que este método lida com requisições HTTP POST.
     public ProdutosResponseDto update(@PathVariable Long id, @RequestBody ProdutosRequestDto produtosRequestDto) {

@@ -30,4 +30,44 @@ public class Vendas {
 
     @Column(name = "price")
     private Float price;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Produtos getProdutos() {
+        return produtos;
+    }
+
+    public void setProdutos(Produtos produtos) {
+        this.produtos = produtos;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    public Float getPrice() {
+        return price;
+    }
+
+    public void setPrice(Float price) {
+        this.price = price;
+    }
 }

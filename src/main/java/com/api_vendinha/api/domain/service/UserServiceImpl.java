@@ -60,17 +60,17 @@ public class UserServiceImpl implements UserServiceInterface {
         // Salva o usuário no banco de dados e obtém a entidade persistida com o ID gerado.
         User savedUser = userRepository.save(user);
 
-//        List<Produtos> produtos = userRequestDto.getProdutosRequestDtos().stream().map(
-//                dto -> {
-//                    Produtos produto = new Produtos();
-//                    produto.setNome(dto.getNome());
-//                    produto.setQuantidade(dto.getQuantidade());
-//                    produto.setPreco(dto.getPreco());
-//                    produto.setUser(savedUser);
-//                    return produto;
-//                }).collect(Collectors.toList());
-//
-//        produtosRepository.saveAll(produtos);
+        List<Produtos> produtos = userRequestDto.getProdutosRequestDtos().stream().map(
+                dto -> {
+                    Produtos produto = new Produtos();
+                    produto.setNome(dto.getNome());
+                    produto.setQuantidade(dto.getQuantidade());
+                    produto.setPreco(dto.getPreco());
+                    produto.setUser(savedUser);
+                    return produto;
+                }).collect(Collectors.toList());
+
+        produtosRepository.saveAll(produtos);
 
         // Cria um DTO de resposta com as informações do usuário salvo.
         UserResponseDto userResponseDto = new UserResponseDto();
